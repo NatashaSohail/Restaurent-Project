@@ -1,0 +1,169 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Golden</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- NavBar -->
+  <header>
+    <div class="navbar">
+      <!-- Logo Section -->
+      <div class="logo">
+        <div class="img"></div>
+        <div class="name">The Golden</div>
+      </div>
+      <!-- Options -->
+      <div class="opt">
+        <div class="main-nav border"><a href="#container">HOME</a></div>
+        <div class="main-nav border"><a href="#menu">MENU</a></div>
+        <div class="main-nav border"><a href="#specials">DISH OF DAY</a></div>
+        <div class="main-nav border"><a href="#faq">FAQ</a></div>
+        <div class="main-nav border"><a href="#blog">Blog</a></div>
+        <div class="main-nav border"><a href="#contact">Contact</a></div>
+      </div>
+      <!-- Theme -->
+      <div class="switcher" onclick="toggleTheme()">
+        <h2>Dark</h2>
+        <button id="btn"></button>
+        <h2>&nbsp; Light</h2>
+      </div>
+    </div>
+  </header>
+  <!-- Landing page -->
+   <section id="container">
+    <div class="split left">
+      <h1>Discover Our Menu</h1>
+      <a href="#menu" class="btn1">Menu</a>
+    </div>
+    <div class="split right">
+      <h1>Reserve Now</h1>
+      <a href="#contact" class="btn1">Reserve</a>
+    </div>
+  </section> <br>
+  <!-- Menu -->
+   <Section id="menu">
+    <h2><center>Menu</center></h2>
+  <div class="menu-grid">
+        <div class="dish">
+          <img src="https://picsum.photos/400/300?1" alt="Grilled Salmon">
+          <div class="meta">
+            <h4>Grilled Salmon</h4>
+            <div class="price">
+              $18.50  
+            </div>
+          </div>
+        </div>
+        <div class="dish">
+          <img src="https://picsum.photos/400/300?2" alt="Margherita Pizza">
+          <div class="meta">
+            <h4>Margherita Pizza</h4>
+            <div class="price">
+              $12.00
+            </div>
+          </div>
+        </div>
+        <div class="dish">
+          <img src="https://picsum.photos/400/300?3" alt="Caesar Salad">
+          <div class="meta">
+            <h4>Caesar Salad</h4>
+            <div class="price">
+              $9.50
+            </div>
+          </div>
+        </div>
+        <div class="dish">
+          <img src="https://picsum.photos/400/300?4" alt="Ravioli">
+          <div class="meta">
+            <h4>Ravioli</h4>
+            <div class="price">
+              $14.00
+            </div>
+          </div>
+        </div>
+        <div class="dish">
+          <img src="https://picsum.photos/400/300?5" alt="Beef Steak">
+          <div class="meta">
+            <h4>Beef Steak</h4>
+            <div class="price">
+              $21.00
+            </div>
+          </div>
+        </div>
+        <div class="dish">
+          <img src="https://picsum.photos/400/300?6" alt="Chocolate Dessert">
+          <div class="meta">
+            <h4>Chocolate Dessert</h4>
+            <div class="price">
+              $7.00
+            </div>
+          </div>
+        </div>
+      </div>
+  </Section>
+  <!-- Specials Section -->
+  <section id="specials">
+    <h2>Special of the Day</h2>
+    <div class="special-card" id="specialCard">
+      <h3 class="title">Lemon Herb Salmon</h3>
+      <img src="https://picsum.photos/id/237/800/400" alt="Special Dish">
+      <div id="toggleSpecial" class="btn2">Show Special</div>
+      <div class="desc">
+        Our Lemon Herb Salmon is pan-seared and finished with a bright lemon butter sauce, 
+        served on a bed of roasted seasonal vegetables. Limited availability today.
+      </div>
+    </div>
+  </section>
+  <!-- FAQ and Contact Section -->
+  <div class="divider">
+    <div class="fqsection">
+          <!-- FAQ Section-->
+            <section id="faq">
+    <h2><center>FAQ</center></h2>
+    <div class="faq-item">
+      <input type="checkbox" id="q1">
+      <label for="q1" class="faq-question">How long is delivery typically?</label>
+      <div class="faq-answer">
+        <p>Delivery times can vary based on location and demand, but we strive to deliver within 30-45 minutes.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <input type="checkbox" id="q2">
+      <label for="q2" class="faq-question">Do you offer vegan options?</label>
+      <div class="faq-answer">
+        <p>Yes, we have a variety of vegan options available. Please check our menu for details.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <input type="checkbox" id="q3">
+      <label for="q3" class="faq-question">Can I change my reservation?</label>
+      <div class="faq-answer">
+        <p>Reservations can be modified up to 4 hours before via our contact form or by phone. Please have your reservation details ready.</p>
+      </div>
+    </div>
+              </section>
+     </div>
+    <div class="contactsection">
+  <!-- Contact Section-->
+   <section id="contact">
+      <h2>Contact & Reservation</h2>
+      <form id="contactForm" class="contact" novalidate>
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="your@email.com" required>
+        <div id="emailError" class="error">Please enter a valid email.</div>
+        <div class="btn3">Submit</div>
+      </form>
+    </section>
+    </div>
+  </div><br>
+ <!-- Footer-->
+   <footer class="footer">
+      <div> &copy; The Golden — All rights reserved.</div>
+      <div class="social">Follow us:<a href="#">Instagram</a> <a href="#">Facebook</a></div>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
