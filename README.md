@@ -42,8 +42,8 @@ or deploying it to any static hosting platform like **GitHub Pages**, **Netlify*
 
 ## 🛠️Technologies Used
 
-- HTML5  
-- CSS3  
+- HTML
+- CSS  
 - JavaScript  
 
 ---
